@@ -1,0 +1,805 @@
+
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link href="slider/jquery.bxslider.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="source/jquery.fancybox.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="css/jquery.arcticmodal-0.3.css"/>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+    <script src="js/jquery-2.1.4.min.js"></script><!-- bxSlider Javascript file -->
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="source/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="js/jquery.arcticmodal-0.3.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+      	$('.bxslider').bxSlider({
+      	});
+      	$("a.gallery").fancybox();
+      	$("a.fancybox").fancybox();
+      	//- $("#button-close").click(function(){
+      	//- $("body").addClass("hide-menu");
+      	//- $("body").removeClass("hide-list");
+      	//- });
+      	$('.bxslider').bxSlider();
+      	$('.serv_slider').bxSlider({
+      	slideWidth: 200,
+      	minSlides: 2,
+      	maxSlides: 4,
+      	slideMargin: 20,
+      	pager: false
+      	});
+      
+      	$('.serv_clients').bxSlider({
+      	slideWidth: 150,
+      	minSlides: 5,
+      	maxSlides: 5,
+      	slideMargin: 0,
+      	pager: false
+      	});
+      	$('.recall_slider').bxSlider({
+      	slideWidth: 251,
+      	minSlides: 3,
+      	maxSlides: 3,
+      	pager: false
+      	})
+      
+      
+      	$(".close").click(function(){
+      		$("modalDialog").addClass("modal-close");
+      	});
+      
+      	$('.open_modal_1').click(function () {
+      	$('#openModal1,.modal-bg').fadeIn(500);
+      	});
+        
+      	$('.close').click(function () {
+      	$('#openModal1, #openModal2, #openModal3, #openModal4, .modal-bg').fadeOut(500);
+      	});
+      	$('.modal-bg').click(function () {
+      	$('#openModal1, #openModal2, #openModal3, #openModal4, .modal-bg').fadeOut(500);
+      	});
+      	
+      
+      });
+      
+    </script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="wrapper-slider">
+        <ul class="bxslider">
+          <li><img src="images/img1.jpg" alt=""/></li>
+          <li><img src="images/img1.jpg" alt=""/></li>
+          <li><img src="images/img1.jpg" alt=""/></li>
+        </ul>
+        <div class="slider-content">
+          <div class="header"><img src="images/header.png" alt=""/>
+            <div class="wrapper-header">
+              <div class="logo"><img src="images/logo.png" alt=""/></div>
+              <div class="slogan">
+                <p>КАЧЕСТВЕННЫЕ И НАДЕЖНЫЕ </p>
+                <p>РОЛЬСТАВНИ ОТ ПРОИЗВОДИТЕЛЯ!</p>
+              </div>
+              <div class="contacts"><img src="images/phone.png" alt=""/>
+                <p>+7(495) 722-47-45</p>
+                <p>+7(495) 722-47-45</p>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper-slider-content">
+            <p class="title">РОЛЬСТАВНИ ДЛЯ ДОМА</p>
+            <div class="title-block"> 
+              <p>СО СКИДКОЙ <span>10% </span>И ГАРАНТИЕЙ НА <span>1 ГОД!</span></p>
+              <ul class="menu">
+                <li><a href="#openModal3" class="open_modal_1">Вызвать замерщика</a></li>
+                <li><a href="#openModal2" class="open_modal_1">Заказать обратный звонок</a></li>
+                <li><a href="#openModal1" class="open_modal_1">Просчитать стоимость</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="main" class="navigation">
+        <ul>
+          <li><a href="#">Рольставни</a>
+            <ul class="inside">
+              <li><a href="#">Для дома, дачи, квартиры</a></li>
+              <li><a href="#">Для магазина и бизнеса</a></li>
+              <li><a href="#">По типу установки</a></li>
+              <li><a href="#">Комплектующие</a></li>
+              <li class="last-menu"><a href="#">По материалам</a></li>
+            </ul>
+          </li>
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Услуги</a></li>
+          <li><a href="#">Цены</a></li>
+          <li><a href="#">Галерея</a></li>
+          <li><a href="#">Инфорация</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="about-rollprom">
+        <div class="rol-up"> 
+          <p>РОЛПРОМ - ЭТО</p>
+        </div>
+        <div class="about-services">
+          <div class="about-service"><img src="images/item1.png" alt=""/>
+            <p>ОПЫТНЫЕ СПЕЦИАЛИСТЫ</p>
+          </div>
+          <div class="about-service"><img src="images/item2.png" alt=""/>
+            <p>БОЛЕЕ 3 000 ДОВОЛЬНЫХ КЛИЕНТОВ</p>
+          </div>
+          <div class="about-service"><img src="images/item3.png" alt=""/>
+            <p>РАБОТАЕМ С МАГАЗИНАМИ ДОМАМИ КВАРТИРАМИ СКЛАДАМИ</p>
+          </div>
+          <div class="about-service"><img src="images/item4.png" alt=""/>
+            <p>100% ГАРАНТИЯ КАЧЕСТВА ОТ ПРОИЗВОДИТЕЛЯ</p>
+          </div>
+          <div class="about-service"><img src="images/item5.png" alt=""/>
+            <p>ПОДБИРАЕМ ВАРИАНТЫ ДЛЯ ЛЮБОГО КОШЕЛЬКА</p>
+          </div>
+        </div>
+        <div class="rollprom-text">
+          <p> <span> Lorem ipsum dolor sit amet</span>
+            <consectetur>adipisicing elit. Sequi similique magni voluptatibus consectetur facilis doloremque est, culpa a quo accusantium nisi qui assumenda, asperiores, saepe voluptatum illum quas fuga laudantium.  lore Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus atque quas fugiat doloribus earum excepturi unde facere sit. Cumque pariatur doloremque eligendi, neque eos dolores atque aperiam fugit, accusamus officiis.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae blanditiis assumenda ex ullam molestias, eligendi, error, similique, consequuntur quo a officia. Perspiciatis rerum culpa, itaque error dicta accusantium ut facere.</consectetur>
+          </p>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam reiciendis eligendi repellendus, vero similique molestiae voluptate molestias pariatur dignissimos consectetur quas eaque sint dolore doloremque alias aliquid labore temporibus numquam!</p>
+        </div>
+        <div class="image-block">
+          <div class="image-banner-1">
+            <p class="ban-3">АКЦИЯ!</p>
+            <p class="ban-4">РОЛЬСТАВНИ <span>35€/м²</span></p>
+          </div>
+          <div class="image-2"></div>
+        </div>
+        <div class="image-block">
+          <div class="image-3"></div>
+          <div class="image-banner-2">
+            <p class="ban-1">ПОЛУЧИ СКИДКУ!</p>
+            <p class="ban-2">5% от цены конкурента</p>
+          </div>
+        </div>
+      </div>
+      <div class="calculator">
+        <h1>КАЛЬКУЛЯТОР СТОИМОСТИ</h1>
+        <div class="wrapper-fields">
+          <p>Ширина проёма мм:</p>
+          <input type="text" placeholder="0"/>
+        </div>
+        <div class="wrapper-fields">
+          <p>Высота проёма мм:</p>
+          <input type="text" placeholder="0"/>
+        </div>
+        <div class="wrapper-fields res">
+          <p>Количество конструкций:</p>
+          <input type="text" placeholder="1"/>
+        </div>
+        <div class="wrapper-fields">
+          <p>Тип монтажа:</p>
+          <select>
+            <option>Не выбрано</option>
+            <option>Lorem</option>
+          </select>
+        </div>
+        <div class="wrapper-fields">
+          <p>Цвет</p>
+          <select>
+            <option>Не выбрано</option>
+            <option>Lorem</option>
+          </select>
+        </div>
+        <div class="wrapper-fields res">
+          <p>Тип прифиля:</p>
+          <select>
+            <option>Не выбрано</option>
+            <option>Lorem</option>
+          </select>
+        </div>
+        <div class="button-wrapper">
+          <div class="to-order"><a href="#">РАССЧИТАТЬ</a></div>
+          <div class="to-order"><a href="#">ЗАКАЗАТЬ</a></div>
+        </div>
+      </div>
+      <div class="our-services">
+        <h1>НАШИ УСЛУГИ</h1>
+        <div class="serv-wrapper">
+          <p class="number">01</p>
+          <div class="color-block-2"></div><a rel="group" href="images/slide1.jpg" class="gallery"><img src="images/gal1.jpg"/></a>
+          <p class="serv-top">Рольставни для дома и дачи</p>
+          <p class="serv-bottom"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, distinctio. Magnam aperiam vel impedit dolores deserunt nisi officia iste numquam, quis deleniti, incidunt, neque illum minus pariatur obcaecati optio officiis.</p>
+          <p class="to-know"><a href="#">УЗНАТЬ ПОДРОБНЕЕ</a></p>
+        </div>
+        <div class="serv-wrapper">
+          <p class="number">02</p>
+          <div class="color-block-2"></div><a rel="group" href="images/slide1.jpg" class="gallery"><img src="images/gal1.jpg"/></a>
+          <p class="serv-top">Рольставни для дома и дачи</p>
+          <p class="serv-bottom"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, distinctio. Magnam aperiam vel impedit dolores deserunt nisi officia iste numquam, quis deleniti, incidunt, neque illum minus pariatur obcaecati optio officiis.</p>
+          <p class="to-know"><a href="#">УЗНАТЬ ПОДРОБНЕЕ</a></p>
+        </div>
+        <div class="serv-wrapper">
+          <p class="number">03</p>
+          <div class="color-block-1"></div><a rel="group" href="images/slide1.jpg" class="gallery"><img src="images/gal1.jpg"/></a>
+          <p class="serv-top">Рольставни для дома и дачи</p>
+          <p class="serv-bottom"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, distinctio. Magnam aperiam vel impedit dolores deserunt nisi officia iste numquam, quis deleniti, incidunt, neque illum minus pariatur obcaecati optio officiis.</p>
+          <p class="to-know"><a href="#">УЗНАТЬ ПОДРОБНЕЕ</a></p>
+        </div>
+        <div class="serv-wrapper">
+          <p class="number">04</p>
+          <div class="color-block-1"></div><a rel="group" href="images/slide1.jpg" class="gallery"><img src="images/gal1.jpg"/></a>
+          <p class="serv-top">Рольставни для дома и дачи</p>
+          <p class="serv-bottom"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, distinctio. Magnam aperiam vel impedit dolores deserunt nisi officia iste numquam, quis deleniti, incidunt, neque illum minus pariatur obcaecati optio officiis.</p>
+          <p class="to-know"><a href="#">УЗНАТЬ ПОДРОБНЕЕ</a></p>
+        </div>
+      </div>
+      <div class="steps">
+        <div class="steps-up">
+          <h1>ЭТАПЫ УСТАНОВКИ РОЛЬСТАВЕН</h1>
+        </div>
+        <div class="steps-menu">
+          <ul>
+            <li class="drop"><a href="#">ЗАМЕР</a>
+              <div class="step-block">
+                <h1> ПОЛУЧИВ ЗАЯВКУ НА ИЗГОТОВЛЕНИЕ РОЛЛЕТНЫХ КОНСТРУКЦИЙ, МЫ ОЗГАНИЗУЕМ ВЫЕЗД ЗАМЕРЩИКА НА ОБЪЕКТ, ЗАМЕР, ПРОВЕДЕННЫЙ СПЕЦИАЛИСТАМИ ПРЕДПОЛАГАЕТ:</h1><img src="images/check.png" alt="" class="check"/>
+                <p class="list"> определение габаритов будущей конструкции;</p><img src="images/check.png" alt="" class="check"/>
+                <p class="list"> оценку качества несущих стен и готовности посадочных мест для монтажа;</p><img src="images/check.png" alt="" class="check"/>
+                <p class="list"> рекомедации владельцу объекта по подготовке места для установки роллет;</p><img src="images/check.png" alt="" class="check"/>
+                <p class="list"> оценка возможности использования полотна из стали или алюминия, возможностей по установке того или иного вида приводного оборудования.</p>
+                <div class="list-about">
+                  <p> Производится замер точно в оговоренный срок, по согласованию с заказчиком.</p>
+                  <div class="wrapper-bt"><img src="images/menu1.png" alt=""/><a href="#">Вызвать замерщика</a></div>
+                </div>
+              </div>
+            </li>
+            <li><a href="#">ПРОИЗВОДСТВО</a></li>
+            <li><a href="#">МОНТАЖ</a></li>
+            <li><a href="#">ОБСЛУЖИВАНИЕ</a></li>
+            <li><a href="#">ГАРАНТИЯ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="set-rolls"><img src="images/man.png" alt="" class="man"/>
+        <div class="wrapper-set-rolls">
+          <h1>ПОДБЕРИТЕ СЕБЕ </h1>
+          <h1>РОЛЬСТАВНИ</h1>
+          <div class="set-nav">
+            <ul>
+              <li class="profile">ПРОФИЛЬ
+                <div class="up-li"></div>
+                <div class="pro-block">
+                  <div class="pro-wrap"><img src="images/profile1.png" alt=""/>
+                    <div class="ok-block-3"></div>
+                  </div>
+                  <div class="pro-wrap"><img src="images/profile2.png" alt=""/>
+                    <div class="ok-block-3"></div>
+                  </div>
+                  <div class="pro-wrap"><img src="images/profile3.png" alt=""/>
+                    <div class="ok-block-3"></div>
+                  </div>
+                  <div class="pro-wrap"><img src="images/profile4.png" alt=""/>
+                    <div class="ok-block-3"></div>
+                  </div>
+                  <div class="pro-wrap"><img src="images/profile5.png" alt=""/>
+                    <div class="ok-block-3"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="color">ЦВЕТ
+                <div class="up-li"></div>
+                <div class="color-block">
+                  <div class="col-wrap">
+                    <div class="col-item">
+                      <p>RAL 1000</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl1"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1001</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl2"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1002</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl3"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1003</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl4"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1004</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl5"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1005</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl6"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1006</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl7"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1007</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl8"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1008</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl9"></div>
+                    </div>
+                  </div>
+                  <div class="col-wrap">
+                    <div class="col-item">
+                      <p>RAL 1000</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl1"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1001</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl2"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1002</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl3"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1003</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl4"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1004</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl5"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1005</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl6"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1006</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl7"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1007</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl8"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1008</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl9"></div>
+                    </div>
+                  </div>
+                  <div class="col-wrap">
+                    <div class="col-item">
+                      <p>RAL 1000</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl1"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1001</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl2"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1002</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl3"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1003</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl4"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1004</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl5"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1005</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl6"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1006</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl7"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1007</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl8"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1008</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl9"></div>
+                    </div>
+                  </div>
+                  <div class="col-wrap">
+                    <div class="col-item">
+                      <p>RAL 1000</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl1"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1001</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl2"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1002</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl3"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1003</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl4"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1004</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl5"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1005</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl6"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1006</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl7"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1007</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl8"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1008</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl9"></div>
+                    </div>
+                  </div>
+                  <div class="col-wrap">
+                    <div class="col-item">
+                      <p>RAL 1000</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl1"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1001</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl2"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1002</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl3"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1003</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl4"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1004</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl5"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1005</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl6"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1006</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl7"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1007</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl8"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1008</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl9"></div>
+                    </div>
+                  </div>
+                  <div class="col-wrap">
+                    <div class="col-item">
+                      <p>RAL 1000</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl1"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1001</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl2"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1002</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl3"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1003</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl4"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1004</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl5"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1005</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl6"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1006</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl7"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1007</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl8"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1008</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl9"></div>
+                    </div>
+                  </div>
+                  <div class="col-wrap">
+                    <div class="col-item">
+                      <p>RAL 1000</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl1"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1001</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl2"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1002</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl3"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1003</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl4"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1004</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl5"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1005</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl6"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1006</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl7"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1007</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl8"></div>
+                    </div>
+                    <div class="col-item">
+                      <p>RAL 1008</p>
+                      <div class="ok-block-2"></div>
+                      <div class="col-bl9"></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="complect">КОМПЛЕКТАЦИЯ
+                <div class="up-li"></div>
+                <div class="complect1-block">
+                  <div class="comp-wrap"><img src="images/complect3.png" alt=""/>
+                    <div class="ok-block-4"></div>
+                    <p> <a href="#">Ручной воротковый привод</a></p>
+                  </div>
+                  <div class="comp-wrap"><img src="images/complect4.png" alt=""/>
+                    <div class="ok-block-4"></div>
+                    <p> <a href="#">Пружинно-иннерционный механизм</a></p>
+                  </div>
+                  <div class="comp-wrap"><img src="images/complect5.png" alt=""/>
+                    <div class="ok-block-4"></div>
+                    <p> <a href="#">С защитным коробом</a></p>
+                  </div>
+                </div>
+              </li>
+              <li class="direct">УПРАВЛЕНИЕ
+                <div class="up-li"></div>
+                <div class="direct-block">
+                  <div class="dir-wrap"><img src="images/direct1.png" alt=""/>
+                    <div class="ok-block"></div>
+                    <p> <a href="#">Выключатель DUP/2</a></p>
+                  </div>
+                  <div class="dir-wrap"><img src="images/direct2.png" alt=""/>
+                    <div class="ok-block"></div>
+                    <p> <a href="#">Выключатель SAPF</a></p>
+                  </div>
+                  <div class="dir-wrap"><img src="images/direct3.png" alt=""/>
+                    <div class="ok-block"></div>
+                    <p> <a href="#">Выключатель SAPF</a></p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="finished-projects">
+        <h1>ЗАВЕРШЕННЫЕ ПРОЕКТЫ</h1>
+        <div class="serv_slider">
+          <div class="slide"><a href="images/ser1.jpg" rel="serv_gal" class="fancybox"><img src="images/ser1.jpg"/></a><a href="#" class="in-slide">Алюминиевые рольставни</a></div>
+          <div class="slide"><a href="images/ser2.jpg" rel="serv_gal" class="fancybox"><img src="images/ser2.jpg"/></a><a href="#" class="in-slide">Алюминиевые рольставни</a></div>
+          <div class="slide"><a href="images/ser3.jpg" rel="serv_gal" class="fancybox"><img src="images/ser3.jpg"/></a><a href="#" class="in-slide">Стальные рольставни</a></div>
+        </div>
+        <div class="to-count"><a href="#">РАССЧИТАТЬ СТОИМОСТЬ ВАШЕГО ПРОЕКТА</a></div>
+      </div>
+      <div class="our-sertificates">
+        <h1>НАШИ СЕРТИФИКАТЫ</h1>
+        <div class="left-img"><img src="images/left-image.png" alt=""/></div>
+        <div class="sertificates"><a rel="group" href="images/sertif1.png" class="gallery"><img src="images/sertif1.png"/></a><a rel="group" href="images/sertif1.png" class="gallery"><img src="images/sertif1.png"/></a><a rel="group" href="images/sertif1.png" class="gallery"><img src="images/sertif1.png"/></a></div>
+        <div class="right-img"><img src="images/right-image.png" alt=""/></div>
+      </div>
+      <div class="our-clients">
+        <h1>НАШИ КЛИЕНТЫ</h1>
+        <div class="serv_clients">
+          <div class="slide"><a href="images/cli1.png" rel="serv_gal" class="fancybox"><img src="images/cli1.png"/></a></div>
+          <div class="slide"><a href="images/cli2.png" rel="serv_gal" class="fancybox"><img src="images/cli2.png"/></a></div>
+          <div class="slide"><a href="images/cli3.png" rel="serv_gal" class="fancybox"><img src="images/cli3.png"/></a></div>
+          <div class="slide"><a href="images/cli4.png" rel="serv_gal" class="fancybox"><img src="images/cli4.png"/></a></div>
+          <div class="slide"><a href="images/cli5.png" rel="serv_gal" class="fancybox"><img src="images/cli5.png"/></a></div>
+        </div>
+      </div>
+      <div class="our-recall">
+        <div class="wrapper-recall">
+          <h1>ОТЗЫВЫ КЛИЕНТОВ</h1>
+          <div class="recall_slider">
+            <div class="slide">
+              <div class="about-name"><img id="person" src="images/name1.png" alt=""/>
+                <div class="name-wrap">
+                  <p class="name">АЛЕКСЕЙ АЛЕКСАНДРОВ</p>
+                  <P class="date">17.06.2015</P>
+                </div><br/>
+                <p class="text-info"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque excepturi nesciunt hic maxime possimus ipsa officiis dolorem doloremque sint at vero, modi nostrum</p>
+                <p class="link"><a href="#">Подробнее...</a></p><a href="images/build1.png" rel="serv_gal" class="fancybox"><img src="images/build1.png"/></a>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="about-name"><img id="person" src="images/name1.png" alt=""/>
+                <div class="name-wrap">
+                  <p class="name">АЛЕКСЕЙ АЛЕКСАНДРОВ</p>
+                  <P class="date">17.06.2015</P>
+                </div><br/>
+                <p class="text-info"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque excepturi nesciunt hic maxime possimus ipsa officiis dolorem doloremque sint at vero, modi nostrum</p>
+                <p class="link"><a href="#">Подробнее...</a></p><a href="images/build1.png" rel="serv_gal" class="fancybox"><img src="images/build1.png"/></a>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="about-name"><img id="person" src="images/name1.png" alt=""/>
+                <div class="name-wrap">
+                  <p class="name">АЛЕКСЕЙ АЛЕКСАНДРОВ</p>
+                  <P class="date">17.06.2015</P>
+                </div><br/>
+                <p class="text-info"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque excepturi nesciunt hic maxime possimus ipsa officiis dolorem doloremque sint at vero, modi nostrum</p>
+                <p class="link"><a href="#">Подробнее...</a></p><a href="images/build1.png" rel="serv_gal" class="fancybox"><img src="images/build1.png"/></a>
+              </div>
+            </div>
+          </div>
+          <div class="read-link"><a href="#">Читать все отзывы</a></div>
+        </div>
+      </div>
+      <div class="footer-up">
+        <div class="footer-top">
+          <div class="logo"><img src="images/footer-logo.png" alt=""/></div>
+          <div class="footer-slogan">
+            <p>КАЧЕСТВЕННЫЕ И НАДЕЖНЫЕ РОЛЬСТАВНИ ОТ ПРОИЗВОДИТЕЛЯ!</p>
+          </div>
+          <div class="contacts"><img src="images/phone-2.png" alt=""/>
+            <p>+7(495) 722-47-45</p>
+            <p>+7(495) 722-47-45</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-down">
+        <div class="footer-bottom">
+          <div class="work-info"><img src="images/contact1.png" alt=""/>
+            <p class="adress">г.Москва, ул. Октября, 3</p><img src="images/contact2.png" alt=""/>
+            <p class="adress">График работы:</p>
+            <p class="adress2">Пн-Пт с 09:00 до 18:00</p><img src="images/contact3.png" alt=""/>
+            <p class="adress">info@rolprom.ru</p>
+          </div>
+          <div class="links-footer">
+            <ul>
+              <li><a href="#">Рольставни</a></li>
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Услуги</a></li>
+              <li><a href="#">Цены</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Галерея</a></li>
+              <li><a href="#">Информация</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#" class="hide">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="footer-info">
+            <p class="about-site">  Информация, предоставленная на сайте не может служить пуличной офертой. Все цены и наличие товаров уточняйте у менеджера.</p>
+            <p class="copyright">©Все права защищены</p>
+          </div>
+        </div>
+      </div>
+      <div class="line-footer"></div>
+      <div id="openModal1" class="modalDialog">
+        <div>
+          <p class="zam">ОБСУДИТЬ С КОНСУЛЬТАНТОМ</p>
+          <form>
+            <input type="text" placeholder="Имя"/>
+            <input type="text" placeholder="Телефон"/>
+            <input type="submit" placeholder="ОТПРАВИТЬ"/>
+          </form><a id="close" class="close"></a>
+        </div>
+      </div>
+      <div id="openModal2" class="modalDialog">
+        <div>
+          <p class="zam">ВЫЗВАТЬ ЗАМЕРЩИКА</p>
+          <form>
+            <input type="text" placeholder="Имя"/>
+            <input type="text" placeholder="Телефон"/>
+            <input type="submit" placeholder="ОТПРАВИТЬ"/>
+          </form><a id="close" class="close"></a>
+        </div>
+      </div>
+      <div id="openModal3" class="modalDialog">
+        <div>
+          <p class="zam">ВЫЗВАТЬ ЗАМЕРЩИКА</p>
+          <form>
+            <input type="text" placeholder="Имя"/>
+            <input type="text" placeholder="Телефон"/>
+            <input type="submit" placeholder="ОТПРАВИТЬ"/>
+          </form><a id="close" class="close"></a>
+        </div>
+      </div>
+      <div id="openModal4" class="modalDialog">
+        <div>
+          <p class="zam">СПАСИБО!</p>
+          <P class="thanks1">Ваша заявка отправлена успешно!</P>
+          <p class="thanks2">Наш менеджер свяжется с вами в самое ближайшее время!</p>
+          <p class="ok-btn"><a href="">OK</a></p><a id="close" class="close"></a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <div class="modal-bg"></div>
+</html>
